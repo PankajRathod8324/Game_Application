@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <style>
+        .img {
+            background-image: url("pexels-lucie-liz-3165335.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .button {
+            position: relative;
+            text-align: center;
+            width: 300px;
+            padding: 40px;
+            font-size: 35px;
+            color: #87FF2A;
+            font-family: poppins;
+            font-weight: 400;
+            border: 5px solid #87FF2A;
+            text-transform: uppercase;
+            Letter-spacing: 15px;
+            cursor: pointer;
+            border-radius: 100px;
+            transition: 1.5s;
+        }
+        
+        .button:hover {
+            box-shadow: 0 5px 50px 0 #87FF2A inset, 0 5px 50px 0 #87FF2A;
+        }
+        
+        .buut {
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px;
+            color: #03e9f4;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+        }
+        
+        .buut:hover {
+            background-color: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+        }
+        
+        .buut1 {
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px;
+            color: #FF00FF;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+        }
+        
+        .buut1:hover {
+            background-color: #FF00FF;
+            color: #050801;
+            box-shadow: 0 0 5px #FF00FF, 0 0 25px #FF00FF, 0 0 50px #FF00FF, 0 0 200px #FF00FF;
+        }
+        /* .s0 {
+            height: 0%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            left: 0;
+        }
+        
+        .s1 {
+            height: 0%;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- <form>
+        <select name="fruits">
+                    <option value="apple">fruits</option>
+                    <option value="apple">apple2</option>
+                    <option value="apple">apple3</option>
+                    <option value="apple">apple4</option>
+            </form> -->
+
+    <div class="img"></div>
+    <div class="container">
+        <div class="button" onclick="myFunction()">START GAME</div>
+
+
+        <div class="s0">
+            <a href="JS Project (1)/JS Project/main.html">
+                <div class="buut">
+                    <p id="demo1">
+                        <!-- <p id="demo3"></p> -->
+                    </p>
+                </div>
+            </a>
+        </div>
+
+
+
+
+
+        <div class="s1">
+            <a href="tictactoe/html.html">
+                <div class="buut1">
+
+                    <p id="demo">
+
+                    </p>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function myFunction() {
+        // document.getElementById("s1").style.display = "none";
+        // document.getElementById("s0").style.display = "none";
+        const car = document.querySelector('.s0');
+        const button = document.querySelector('.button');
+        const ttt = document.querySelector('.s1');
+        button.appendChild(car);
+        button.appendChild(ttt);
+        // const ttt=document.querySelector('.buut1');
+
+        document.getElementById("demo1").innerHTML = "CAR GAME";
+        document.getElementById("demo").innerHTML = "TIE TAC TOE";
+    }
+</script>
+<!-- <img src="pexels-lucie-liz-3165335.jpg" alt="Girl in a jacket"> -->
+
+
+</html>

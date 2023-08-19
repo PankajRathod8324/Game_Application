@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.gamefield {
+    width: 300px;
+    height: 300px;
+}
+
+.cells {
+    display: flex;
+    background-color: #B2F302;
+}
+
+.cell {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 20px;
+}
+
+.restart {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.restart:hover {
+    background-color: DodgerBlue;
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes color {
+    0% {
+        background: #FFD12A;
+    }
+    20% {
+        background: #FFAA1D;
+    }
+    40% {
+        background: #FDFF00;
+    }
+    60% {
+        background: #FD5240;
+    }
+    80% {
+        background: #FF6037;
+    }
+    100% {
+        background: #ED0A3F;
+    }
+}
+
+body {
+    background: #33CCCC;
+    /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Kavoon', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
